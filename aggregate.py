@@ -17,17 +17,15 @@ def rows_aggregate(column, op, value, rows):
             continue
 
     if value == "avg":
-        result = {'avg' : sum(values) / len(values)}
+        result = {'avg': sum(values) / len(values)}
         aggregate_list.append(result)
 
     elif value == "min":
-        result = {'min' : min(values)}
+        result = {'min': min(values)}
         aggregate_list.append(result)
 
     elif value == "max":
-        result = {'max' : max(values)}
+        result = {'max': max(values)}
         aggregate_list.append(result)
 
     return aggregate_list
-
-
